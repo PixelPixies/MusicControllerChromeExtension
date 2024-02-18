@@ -12,11 +12,11 @@ const PLAYERS = {
             keyCode: 80,
             shiftKey: true,
         },
-        playPause: {
+       /* playPause: {
             code: '"KeyK"',
             key: '"k"',
             keyCode: 75,
-        },
+        }, */
     },
     "music.youtube.com": {
         next: {
@@ -29,11 +29,11 @@ const PLAYERS = {
             key: '"k"',
             keyCode: 75,
         },
-        playPause: {
+       /* playPause: {
             code: '"Spacebar"',
             key: '" "',
             keyCode: 32,
-        },
+        }, */
     },
     "www.deezer.com": {
         buttonBased: true,
@@ -45,14 +45,14 @@ const PLAYERS = {
         buttonBased: true,
         next: '".spoticon-skip-forward-16"',
         prev: '".spoticon-skip-back-16"',
-        playPause: '".spoticon-play-16, .spoticon-pause-16"',
+       /* playPause: '".spoticon-play-16, .spoticon-pause-16"', */
     },
     "listen.tidal.com": {
         buttonBased: true,
         next: `'.playback-controls__button--white-icon[data-test="next"]'`,
         prev: `'.playback-controls__button--white-icon[data-test="previous"]'`,
-        playPause: `'.playback-controls__button--white-icon[data-test="play"], .playback-controls__button--white-icon[data-test="pause"]'`,
-    },
+      /*  playPause: `'.playback-controls__button--white-icon[data-test="play"], .playback-controls__button--white-icon[data-test="pause"]'`,
+    }, */
 }
 
 let lastPlayingTab = {}
@@ -93,9 +93,9 @@ chrome.commands.onCommand.addListener((command) => {
                 action = player.prev
                 break
 
-            case "PlayPause":
+           /* case "PlayPause":
                 action = player.playPause
-                break
+                break */
 
             default:
                 return
